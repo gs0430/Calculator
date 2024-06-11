@@ -1,5 +1,3 @@
-// $Id: assignment2.mpc 378 2010-02-07 22:09:38Z hillj $
-
 project (assignment3) {
   exename = assignment3
   install = .
