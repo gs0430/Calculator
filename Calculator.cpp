@@ -9,13 +9,6 @@ Calculator::~Calculator()
 {
 }
 
-// PROF COMMENT: Create a design that does not require having parenthesis as
-// as command object since parenthesis are not executed.
-
-// RESPONSE: I changed the design so that the ( and ) tokens are inserted into the stack as nullptrs instead of Command objects.
-// This way, the stack can still be used to keep track of the order of operations, but the parentheses themselves are not executed and treated as Command objects.
-// Note: The professor's comment was originally in the file that had the code for the Open_Parenthesis class.
-// I deleted the class and file due to the updated desgin, so I moved the comment here.
 Array <Command*> Calculator::infix_to_postfix(const std::string& infix, Command_Factory& factory, Array <Command*>& postfix)
 {
     std::istringstream input(infix);
