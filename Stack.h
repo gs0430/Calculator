@@ -1,15 +1,3 @@
-   // -*- C++ -*-
-// $Id: Stack.h 380 2010-02-08 05:10:33Z hillj $
-
-//==============================================================================
-/**
- * Honor Pledge:
- *
- * I pledge that I have neither given nor received any help
- * on this assignment.
- */
-//==============================================================================
-
 #ifndef _CS507_STACK_H_
 #define _CS507_STACK_H_
 
