@@ -41,17 +41,6 @@ void Queue <T>::enqueue (T element)
 template<typename T>
 T Queue <T>::dequeue (void) 
 {
-    // COMMENT This design is OK, but it is not the best design. This will be
-    // a very expensive array to use if you are dequeing a lot of elements. This
-    // is because you are copying N elements each time you dequeue 1 element.
-    // Instead, you only want to copy element when necessary. Come up with a better
-    // design that is not as expensive for the client to use.
-
-    //RESPONSE I changed the design so the Queue class uses a front_index variable to track the front of the queue.
-    //This would allow me to not have to copy and resize the array everytime a element is dequeued.
-    //The front_index variable will pull the element in the array as the front element of the queue.
-    //If the queue (front index) reaches the end of the array, it will just clear the array/queue.
-    
     if (is_empty()) {
         throw empty_exception("Queue is empty");
     }
